@@ -9,7 +9,7 @@ RUN apt update && apt install -y python3 python3-pip python-is-python3 git wget 
 RUN pip3 install jupyterlab jupyter ipywidgets ipykernel
 
 # Instalar utilidades adicionales
-RUN pip3 install flask tensorflow pillow
+RUN pip3 install flask tensorflow==2.16.1 pillow
 
 # Crear el directorio de trabajo
 WORKDIR /workspaces/Plant-Disease-Classifier-RESTService
